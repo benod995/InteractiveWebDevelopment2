@@ -1,0 +1,18 @@
+canvas {
+    position: absolute;
+}
+select{
+    position:relative;
+    margin-top:410px;
+}
+input{
+    position:relative;
+    top:100;
+}
+
+img{
+    background-color:white;
+}
+#display{
+    background-color:green;
+}

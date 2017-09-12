@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<link rel="stylesheet" type="text/css" href="Assign1.css">
+	</head>
+	<body>
+        <h1>Charts</h1>
+        <div id="canvasDiv">
+        <canvas id="myCanvas" style="border:1px solid #d3d3d3;" > 
+			browser does not support canvas
+		</canvas>
+        <canvas id="myCanvas3" style="border:1px solid #d3d3d3;" > 
+				browser does not support canvas
+		  </canvas>
+        <canvas id="myCanvas2" style="border:1px solid #d3d3d3;" > 
+				browser does not support canvas
+		</canvas>
+            
+            </div>
+       
+	 <div id =screenshotPosition>
+        <select id = "thickness" style = "canvas_height" >
+		<option value = 1 selected>Thin</option>
+		<option value = 3>Medium</option>
+		<option value = 5>Thick</option>
+	</select>
+		 
+	<select id = "pencolour" >
+		<option selected>Black</option>
+		<option>Green</option>
+		<option>Brown</option>
+		<option>Red</option>
+		<option>White</option>
+		<option>Yellow</option>	 
+	</select>
+           <input type = "button" value = "snapshot" id = "snap" onclick = "show_image('img', 
+                 200, 
+                 200, 
+                 'snapshot');">
+	       <input type = "button" value = "Clear" id = "clear" onclick = "resetDraw()" >
+         <input type = "button" value = "Restart Animation" id = "reset" onclick = "resetAnimation()" >
+		 
+            <div id ="display" style="height:200px; width:100%; overflow-x:scroll ; overflow-y:  scroll; padding-bottom:10px;" >
+          
+         </div>   
+    </div>
+         <script src = "Assign1.js"></script>
+	</body>
+</html>
